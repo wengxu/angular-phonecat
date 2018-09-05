@@ -2,3 +2,57 @@ body {
   padding-top: 20px;
 }
 
+body {
+  background-color: powderblue;
+}
+
+h1 {
+  margin-top: 5.5em;
+  font-size: 3em;
+  text-align: center;
+}
+
+span {
+  text-align: center;
+  width: 40%;
+  margin: auto;
+  display: block;
+}
+input {
+  height: 1.8em;
+  font-size: 1.2em;
+  padding-left: 0.4em;
+  margin-left: 1em;
+  width: 6em;;
+}
+
+.typeahead-demo .custom-popup-wrapper {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  background-color: #f9f9f9;
+}
+
+.typeahead-demo .custom-popup-wrapper > .message {
+  padding: 10px 20px;
+  border-bottom: 1px solid #ddd;
+  color: #868686;
+}
+
+.typeahead-demo .custom-popup-wrapper > .dropdown-menu {
+  position: static;
+  float: none;
+  display: block;
+  min-width: 160px;
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+span.selected-item {
+  background-color: bisque;
+  margin: 0.2em;
+  border-radius: 1em;
+}
