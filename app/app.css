@@ -56,3 +56,39 @@ span.selected-item {
   margin: 0.2em;
   border-radius: 1em;
 }
+div#header {
+  height: 1.8em;
+}
+div#dashboard {
+  display: inline;
+}
+div#enter {
+  float: right;
+  display: inline;
+}
+a.top-btns {
+  text-decoration: none;
+  padding: 1em;
+}
+a.top-btns:hover {
+  background-color: aquamarine;
+}
+div.float {
+  position: absolute;
+  top: 0%;
+  left: 100%;
+  width: 60%;
+  height: 100%;
+  transition: 0.5s;
+  background: yellow;
+}
+div.float-close {
+  text-align: center;
+}
+a.float-close {
+  display: block;
+  padding: 1em;
+}
+div.float-content {
+  text-align: center;
+}

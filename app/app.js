@@ -4,26 +4,29 @@
 var phonecatApp = angular.module('phonecatApp', ['ui.bootstrap']);
 
 // Define the `PhoneListController` controller on the `phonecatApp` module
-phonecatApp.controller('PhoneListController', function PhoneListController($scope) {
-  $scope.phones = [
-    {
-      name: 'Nexus S',
-      snippet: 'Fast just got faster with Nexus S.'
-    }, {
-      name: 'Motorola XOOM™ with Wi-Fi',
-      snippet: 'The Next, Next Generation tablet.'
-    }, {
-      name: 'MOTOROLA XOOM™',
-      snippet: 'The Next, Next Generation tablet.'
-    }
-  ];
+phonecatApp.controller('BodyCtrl', function ($scope) {
+  $scope.openSkillEnter = function() {
+    $('div.float').first().css({left: '40%'});
+  }
 });
 
-phonecatApp.controller('TypeaheadCtrl', function($scope, $http) {
-  
+phonecatApp.controller('SkillEnterCtrl', function($scope, $http) {
+  $scope.close = function() {
+    $('div.float').first().css({left: '100%'});
+  };
   
 });
 
+// To Do: And filter 
+//    - get sid, along with skills 
+//    - display sid, along with skills 
+//    - create ftn to check if person_skills include all selected skills
+//    - filter by selected skills 
+//    - test 
+// add location filter 
+// To Do: pagenation for results 
+// To Do: layout fix 
+// To Do: delete filter selection 
 
 phonecatApp.controller('SkillsListCtrl', function($scope, $http) {
   var _selected;

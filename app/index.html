@@ -10,8 +10,24 @@
     <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
     <script src="app.js"></script>
   </head>
-  <body ng-controller="PhoneListController">
-
+  <body ng-controller="BodyCtrl">
+    <div id="header">
+      <div id="dashboard"> <a class="top-btns" href="">Dashboard</a></div>
+      <div id="enter"><a class="top-btns" href="" ng-click="openSkillEnter()">Enter Skills for myself</a></div>
+    </div>
+    <div class="float" ng-controller="SkillEnterCtrl">
+      <div class="float-close"><a class="float-close" ng-click="close()" href>Close</a></div>
+      <div class="float-content">
+          <h3>Enter My Skill</h3>
+          <p>SID: <input type="text"/> </p>
+          <p>Skill: <input type="text"/> </p>
+          <p>
+            <button>Save</button>
+            <button>Cancel</button>
+          </p>
+      </div>
+      
+    </div>
     <div>
       <h1>Talent Marketplace</h1>
 
