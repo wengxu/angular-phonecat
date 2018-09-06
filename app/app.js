@@ -65,6 +65,13 @@ phonecatApp.controller('SkillsListCtrl', function($scope, $http) {
     return result;
   }
   */
+  $scope.getFilter = function(value) {
+    var result = false;
+    if (isInArray(value.skill, $scope.selected_array) ) {
+      result = true;
+    }
+    return result;
+  }
   var self = this;
 
   $scope.skills = [

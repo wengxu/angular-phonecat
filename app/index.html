@@ -28,7 +28,7 @@
             </div>
             <div>
               <ul>
-                <li ng-repeat="skill in skills | filter:selected">
+                <li ng-repeat="skill in skills | filter:getFilter">
                   <span>{{skill.sid}}:&nbsp;{{skill.skill}}</span>
                 </li>
               </ul>
